@@ -412,7 +412,7 @@ metadata:
     capabilities: Auto Pilot
     categories: Streaming & Messaging
     containerImage: docker.io/confluentinc/confluent-operator@sha256:74c94671f6e1caa78299cc6daf8673ef149ac09414bcfb7818cbd2856c9d672a
-    createdAt: "2023-04-20T07:54:12Z"
+    createdAt: "2023-04-20T15:56:27Z"
     olm.skipRange: '>=2.3.0 <2.4.4'
     operators.openshift.io/infrastructure-features: '["disconnected"]'
     operators.openshift.io/valid-subscription: '["Confluent Platform License"]'
@@ -788,24 +788,24 @@ spec:
     name: Confluent, Inc.
     url: https://confluent.io
   relatedImages:
-    - image: docker.io/confluentinc/cp-kafka-rest@sha256:c3c54cd04bd7bb1b1a765cdb9c6cc4b411801e1dfb94d08ab223ed09e73d545b
-      name: cp-kafka-rest
+    - image: docker.io/confluentinc/cp-enterprise-control-center@sha256:14917aa98bc7a3128f08878b2ba933d6bd566db3f3141d16a3632caa281796e4
+      name: cp-enterprise-control-center
+    - image: docker.io/confluentinc/cp-server@sha256:927caa4487db186ea7dd79b42d681dd5f2389552a278b97d42d891240279c2ea
+      name: cp-server
+    - image: docker.io/confluentinc/cp-schema-registry@sha256:f657d2353ac72c688b4f67ddbf48fc118fe939cf887aec7dc9a7461c44baf268
+      name: cp-schema-registry
     - image: docker.io/confluentinc/confluent-init-container@sha256:c4fab72efdb7b6d8ef3602dbe1eafe3afa1f699de19c3e87d1053cdb1d6c52cc
       name: confluent-init-container
     - image: docker.io/confluentinc/confluent-operator@sha256:74c94671f6e1caa78299cc6daf8673ef149ac09414bcfb7818cbd2856c9d672a
       name: confluent-operator-74c94671f6e1caa78299cc6daf8673ef149ac09414bcfb7818cbd2856c9d672a-annotation
+    - image: docker.io/confluentinc/cp-zookeeper@sha256:451bec4b4d9212a211d2f6dd456ed30194d736811ed947109ec52a488f311fad
+      name: cp-zookeeper
+    - image: docker.io/confluentinc/cp-kafka-rest@sha256:c3c54cd04bd7bb1b1a765cdb9c6cc4b411801e1dfb94d08ab223ed09e73d545b
+      name: cp-kafka-rest
     - image: docker.io/confluentinc/cp-ksqldb-server@sha256:cb458302d6138615bc311b6e2b8abc8cfe53a92d3c92520b29c9cb819131ee02
       name: cp-ksqldb-server
     - image: docker.io/confluentinc/cp-server-connect@sha256:4f8f94f9576deca481d1f980b2b1280fbd6dda854b5f2f8f4ec56a2ce7d75ce5
       name: cp-server-connect
     - image: confluentinc/confluent-operator@sha256:74c94671f6e1caa78299cc6daf8673ef149ac09414bcfb7818cbd2856c9d672a
       name: confluent-operator
-    - image: docker.io/confluentinc/cp-enterprise-control-center@sha256:14917aa98bc7a3128f08878b2ba933d6bd566db3f3141d16a3632caa281796e4
-      name: cp-enterprise-control-center
-    - image: docker.io/confluentinc/cp-zookeeper@sha256:451bec4b4d9212a211d2f6dd456ed30194d736811ed947109ec52a488f311fad
-      name: cp-zookeeper
-    - image: docker.io/confluentinc/cp-server@sha256:927caa4487db186ea7dd79b42d681dd5f2389552a278b97d42d891240279c2ea
-      name: cp-server
-    - image: docker.io/confluentinc/cp-schema-registry@sha256:f657d2353ac72c688b4f67ddbf48fc118fe939cf887aec7dc9a7461c44baf268
-      name: cp-schema-registry
   version: 2.4.4
